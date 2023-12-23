@@ -21,8 +21,9 @@ const App=()=> {
           onChange={(e) => setMarkdownText(e.target.value)}
           placeholder="Write your markdown here..."
         />
-        
-        <h1 className="preview" dangerouslySetInnerHTML={{ __html: html }} ></h1>
+        <div>
+           <h1 className="preview" dangerouslySetInnerHTML={{ __html: html }} ></h1>
+        </div>
   
         {html === '' && <div className="loading">Loading...</div>}
       </div>
