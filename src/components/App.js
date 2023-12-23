@@ -22,7 +22,7 @@ const App=()=> {
           placeholder="Write your markdown here..."
         />
         <div>
-           <h1 className="preview" dangerouslySetInnerHTML={{ __html: html }} ></h1>
+           <h1 className="preview"  >{html}</h1>
         </div>
   
         {html === '' && <div className="loading">Loading...</div>}
